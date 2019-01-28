@@ -1,0 +1,624 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,600,600italic,700,700italic);
+ html, body {
+     font-family: 'Open Sans', sans-serif;
+}
+ .panel-menu-group{
+     width: 100%;
+     float: left;
+     border-top: 1px solid #e4e5e7;
+}
+ .panel-menu-group .panel-default{
+     width: 100%;
+     float: left;
+     border: none;
+     margin: 0px;
+}
+ .panel-menu-group .panel-heading{
+     width: 100%;
+     float: left;
+     background: transparent;
+     padding: 0px;
+     border-bottom: 1px solid #e4e5e7 !important;
+     border: none;
+}
+ .panel-menu-group .panel-heading .collapse-title{
+     font-weight: 700;
+     padding: 15px 20px;
+     width: 100%;
+     float: left;
+     color: #6a6c6f;
+     text-align: left;
+}
+ .panel-menu-group .panel-heading .collapse-title.collapsed{
+     background: #f7f9fa;
+}
+ .panel-menu-group .panel-heading .collapse-title.active{
+     color: #266dab;
+}
+ .panel-menu-group .panel-heading .collapse-title img{
+     width: 25px;
+     margin-right: 5px;
+}
+ .panel-menu-group .panel-heading .collapse-title .nav-label{
+     text-transform: none;
+     font-weight: 600;
+     display: inline-block;
+     vertical-align: top;
+     margin: 0px;
+     padding: 0px;
+     line-height: 25px;
+}
+ .panel-menu-group .panel-heading .collapse-title .fa.arrow{
+     float: right;
+     line-height: 25px;
+}
+ .panel-menu-group .panel-heading .collapse-title .fa.arrow:before{
+     content: "\f107";
+}
+ .panel-menu-group .panel-heading .collapse-title.collapsed .fa.arrow:before{
+     content: "\f104 ";
+}
+ .panel-menu-group .panel-collapse{
+     width: 100%;
+     float: left;
+}
+ .panel-menu-group .nav-second-level{
+     width: 100%;
+     float: left;
+     padding: 0px;
+     margin: 0px;
+}
+ .panel-menu-group .nav-second-level li{
+     border-bottom: 1px solid #e4e5e7;
+     width: 100%;
+     float: left;
+}
+ .panel-menu-group .nav-second-level li a{
+     padding: 10px 10px 10px 30px;
+     color: #6a6c6f;
+     text-transform: none;
+     font-weight: 600;
+}
+ .panel-menu-group .nav-second-level li:hover a,.panel-menu-group .nav-second-level li.active a{
+     background-color: #eee;
+     color: #266dab;
+}
+ .askjustlogin{
+     width: 100%;
+     float: left;
+     text-align: center;
+     margin: 25px auto;
+}
+ .trial-message-group{
+     width: 100%;
+     float: left;
+     text-align: center;
+     padding: 50px;
+     background: #fff;
+     border: 1px solid #e4e5e7;
+     border-radius: 2px;
+}
+ .trial-message-group .trial-img{
+     width: 100%;
+     float: left;
+     text-align: center;
+     margin-bottom: 25px;
+}
+ .trial-message-group .trial-img img{
+     width: 100%;
+     max-width: 350px;
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .trial-message-group .trial-message{
+     width: 100%;
+     float: left;
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #6a6c6f;
+}
+ .trial-message-group .trial-message.error-message{
+ color: red;
+ }
+
+ .trial-message-group .trial-btn{
+     width: 100%;
+     float: left;
+     text-align: center;
+}
+ .trial-message-group .trial-btn .btn{
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .subscription-steps{
+     width: 100%;
+     float: left;
+     background: #fff;
+     border: 1px solid #e4e5e7;
+     border-radius: 2px;
+     padding: 20px;
+     position: relative;
+}
+ .leave-form{
+     width: 100%;
+     display: inline-block;
+     vertical-align: top;
+}
+ .subscription-sub-title{
+     width: 100%;
+     float: none;
+     display: inline-block;
+     vertical-align: top;
+     color: #337ab7;
+     font-size: 16px;
+     margin-top: 20px;
+}
+ .theme-checkbox{
+     width: 100%;
+     float: none;
+     display: inline-block;
+     vertical-align: top;
+}
+ .theme-checkbox input{
+     width: auto !important;
+     display: inline-block !important;
+     vertical-align: top !important;
+}
+ .pricing-plan{
+     width: 100%;
+     float: left;
+     padding: 40px;
+     margin: 0px 0px;
+     text-align: center;
+}
+ .pricing-plan .pricing-box{
+     display: inline-block;
+     vertical-align: top;
+     width: 100%;
+     float: none;
+     background: #f1f1f1;
+     padding: 40px;
+     position: relative;
+     cursor:pointer;
+     margin: 30px 0px;
+}
+ .pricing-plan .pricing-box .price{
+     width: 100%;
+     text-align: center;
+     float: left;
+     margin-bottom: 30px;
+     position: relative;
+     z-index: 3;
+}
+ .pricing-plan .pricing-box .price .amount{
+     display: inline-block;
+     vertical-align: top;
+     padding-left: 40px;
+     padding-right: 40px;
+     position: relative;
+     color: #000;
+}
+ .pricing-plan .pricing-box .price .amount .dollar-sign{
+     position: absolute;
+     font-size: 30px;
+     top: -7px;
+     left: 0px;
+     width: 40px;
+     text-align: right;
+}
+ .pricing-plan .pricing-box .price .amount .main-amount{
+     position: relative;
+     width: 100%;
+     float: left;
+     font-size: 60px;
+     font-weight: 100;
+     line-height: 50px;
+     padding: 0px 10px;
+}
+ .pricing-plan .pricing-box .price .amount .cent{
+     position: absolute;
+     font-size: 30px;
+     top: -7px;
+     right: 0px;
+     width: 40px;
+     text-align: left;
+     line-height: 40px;
+}
+ .pricing-plan .pricing-box .price .amount .planperiod{
+     position: absolute;
+     font-size: 15px;
+     font-style: italic;
+     font-family: serif;
+     width: 100px;
+     top: 28px;
+     text-align: left;
+     color: gray;
+}
+ .pricing-plan .pricing-box .plan-name{
+     width: 100%;
+     float: left;
+     font-size: 22px;
+     font-weight: 700;
+     position: relative;
+     z-index: 3;
+     text-align: center;
+     margin-bottom: 15px;
+}
+ .pricing-plan .pricing-box .plan-items{
+     width: 100%;
+     text-align: center;
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+     float: left;
+     z-index: 3;
+     position: relative;
+     margin-bottom: 25px;
+}
+ .pricing-plan .pricing-box .plan-items li{
+     width: 100%;
+     float: left;
+     margin: 5px 0px;
+     font-size: 13px;
+}
+ .pricing-plan .pricing-box .btn-group{
+     width: 100%;
+     text-align: center;
+     margin: 0px;
+     padding: 0px;
+     float: left;
+     z-index: 3;
+     position: relative;
+     display: inline-block;
+}
+ .pricing-plan .pricing-box .btn-group .btn{
+     background: #fff;
+     padding: 10px 40px;
+     float: none;
+     color: #000;
+     text-transform: capitalize;
+     font-weight: 600;
+     font-size: 15px;
+     position: relative;
+     display: inline-block;
+     border-radius: 0px;
+     border: none !important;
+     box-shadow: none;
+}
+ .pricing-plan .pricing-box .btn-group .btn:hover{
+     background: #00a0e2;
+     color: #fff;
+}
+ .pricing-plan .pricing-box.active .price .amount, .pricing-plan .pricing-box.active .price .amount .planperiod, .pricing-plan .pricing-box.active .plan-name, .pricing-plan .pricing-box.active .plan-items li, .pricing-plan .pricing-box:hover .price .amount, .pricing-plan .pricing-box:hover .price .amount .planperiod, .pricing-plan .pricing-box:hover .plan-name, .pricing-plan .pricing-box:hover .plan-items li{
+     color: #fff;
+}
+ .pricing-plan .pricing-box.active:before, .pricing-plan .pricing-box:hover:before{
+     content:"";
+     background: #00a0e2;
+     background: -webkit-linear-gradient(#00a0e2, #03468a);
+     background: -o-linear-gradient(#00a0e2, #03468a);
+     background: -moz-linear-gradient(#00a0e2, #03468a);
+     background: linear-gradient(#00a0e2, #03468a);
+     position: absolute;
+     top: -25px;
+     left: 0px;
+     width: 100%;
+     height: calc(100% + 50px);
+     color: #fff;
+     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+}
+ .pricing-plan .owl-dots{
+     display: none;
+}
+ .pricing-plan .owl-nav{
+     width: 100%;
+     text-align: center;
+     float: left;
+}
+ .pricing-plan .owl-nav .owl-prev, .pricing-plan .owl-nav .owl-next{
+     display: inline-block;
+     vertical-align: top;
+     margin: 5px;
+     padding: 0px;
+     border: none;
+     background: transparent;
+     outline: none !important;
+     box-shadow: none !important;
+}
+ .pricing-plan .owl-nav .owl-prev span, .pricing-plan .owl-nav .owl-next span{
+     float: left;
+     width: 40px;
+     line-height: 34px;
+     text-align: center;
+     font-size: 30px;
+     background: #337ab7;
+     border-radius: 50%;
+     color: #fff;
+     padding-bottom: 4px;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+ .pricing-plan .owl-nav .owl-prev:hover span, .pricing-plan .owl-nav .owl-next:hover span{
+     background: #65d074;
+}
+ .almost-done{
+     width: 100%;
+     float: none;
+     display: inline-block;
+     vertical-align: top;
+     font-size: 18px;
+     color: #337ab7;
+     margin: 15px 0px;
+     font-weight: 600;
+}
+ .table-price{
+     position: relative;
+}
+ .table-price .amount{
+     display: inline-block;
+     vertical-align: top;
+     padding-left: 24px;
+     padding-right: 35px;
+     position: relative;
+     color: #000;
+}
+ .table-price .amount .dollar-sign{
+     position: absolute;
+     font-size: 22px;
+     top: -2px;
+     left: 0px;
+     width: 20px;
+     text-align: right;
+}
+ .table-price .amount .main-amount{
+     position: relative;
+     width: 100%;
+     float: left;
+     font-size: 35px;
+     font-weight: 100;
+     line-height: 35px;
+}
+ .table-price .amount .cent{
+     position: absolute;
+     font-size: 22px;
+     top: -2px;
+     right: 0px;
+     width: 35px;
+     text-align: left;
+     padding-left: 5px;
+}
+ .table-price .amount .planperiod{
+     position: absolute;
+     font-size: 15px;
+     font-style: italic;
+     font-family: serif;
+     width: 100px;
+     top: 28px;
+     text-align: left;
+     color: gray;
+}
+ .table-licence-form-control{
+     max-width: 60px;
+}
+ .table-plan{
+     width: 100%;
+     float: left;
+     position: relative;
+     max-width: 300px;
+}
+ .table-plan .table-plan-name{
+     width: 100%;
+     float: left;
+     font-size: 20px;
+     color: #337ab7;
+}
+ .table-plan .plan-items{
+     width: 100%;
+     float: left;
+     margin: 0px;
+     padding: 0px;
+}
+ .table-plan .plan-items li{
+     width: 100%;
+     float: none;
+     display: inline-block;
+     vertical-align: top;
+     padding-left: 18px;
+     position: relative;
+     list-style: none;
+     font-weight: 600;
+}
+ .table-plan .plan-items li:before{
+     content:"";
+     display: inline-block;
+     text-align: center;
+     width: 10px;
+     height: 6px;
+     border-bottom: 2px solid #65d074;
+     border-left: 2px solid #65d074;
+     position: absolute;
+     -ms-transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     transform: rotate(-47deg);
+     top: 10px;
+     left: 0px;
+}
+ .success-message-group{
+     width: 100%;
+     float: left;
+     text-align: center;
+     padding: 50px;
+     background: #fff;
+     border: 1px solid #e4e5e7;
+     border-radius: 2px;
+}
+ .success-message-group .success-img{
+     width: 100%;
+     float: left;
+     text-align: center;
+     margin-bottom: 25px;
+}
+ .success-message-group .success-img img{
+     width: 100%;
+     max-width: 250px;
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .success-message-group .success-message{
+     width: 100%;
+     float: left;
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #6a6c6f;
+}
+ .success-message-group .success-message img{
+     max-height: 30px;
+     margin: 0px 5px;
+}
+ .success-message-group .success-btn{
+     width: 100%;
+     float: left;
+     text-align: center;
+}
+ .success-message-group .success-btn .btn{
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .creditcard-group{
+     width: 100%;
+     float: left;
+     text-align: center;
+     background: #fff;
+     border-radius: 2px;
+     margin-bottom: 50px;
+}
+ .creditcard-group .creditcard-img{
+     width: 100%;
+     float: left;
+     text-align: center;
+     margin-bottom: 25px;
+}
+ .creditcard-group .creditcard-img img{
+     width: 100%;
+     max-width: 250px;
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .creditcard-group .creditcard-message{
+     width: 100%;
+     float: left;
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #6a6c6f;
+}
+ .creditcard-group .creditcard-btn{
+     width: 100%;
+     float: left;
+     text-align: center;
+}
+ .creditcard-group .creditcard-btn .btn{
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .card-fieldset-group{
+     position: relative;
+}
+ .card-fieldset-group .form-control{
+     padding-right: 50px;
+}
+ .card-fieldset-group .card-image{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+}
+ .card-fieldset-group .card-image img{
+     max-height: 30px;
+     padding: 6px;
+}
+ @media(max-width: 728px){
+     #menu{
+         margin-left: -180px;
+    }
+     #wrapper {
+         margin-left: 0px !important;
+         border: none !important;
+    }
+     body.show-menu #menu{
+         margin-left: 0px !important;
+    }
+     body.show-menu #wrapper {
+         margin-left: 180px !important;
+         border-left: 1px solid #e4e5e7 !important;
+    }
+     .pricing-plan{
+         margin: 50px 0px !important;
+         padding: 0px;
+    }
+     .pricing-plan .pricing-box{
+         padding: 20px;
+         width: 100%;
+         min-width: auto;
+    }
+}
+
+ .error-message-group{
+     width: 100%;
+     float: left;
+     text-align: center;
+     padding: 50px;
+     background: #fff;
+     border: 1px solid #e4e5e7;
+     border-radius: 2px;
+}
+ .error-message-group .error-img{
+     width: 100%;
+     float: left;
+     text-align: center;
+     margin-bottom: 40px;
+}
+ .error-message-group .error-img img{
+     width: 100%;
+     max-width: 250px;
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+ .error-message-group .error-message{
+     width: 100%;
+     float: left;
+     font-size: 20px;
+     margin-bottom: 30px;
+     color: red;
+}
+
+ .error-message-group .error-btn{
+     width: 100%;
+     float: left;
+     text-align: center;
+}
+ .error-message-group .error-btn .btn{
+     display: inline-block;
+     vertical-align: top;
+     float: none;
+}
+
+
+.step-error-message{
+	
+width: 100%;
+	
+float: left;
+	
+text-align: center;
+	
+font-size: 16px;
+	
+color: red;
+	
+margin: 15px 0px;
+}
